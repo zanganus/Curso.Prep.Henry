@@ -60,12 +60,16 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (x == y) {
+  if (x === y) {
     return true;
   } else {
     return false;
   }
 }
+/*
+otra forma de resolver es:
+return x === y;
+*/
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
@@ -110,7 +114,7 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 == 0) {
+  if (num % 2 === 0) {
     return true;
   } else {
     return false;
@@ -121,7 +125,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 != 0) {
+  if (num % 2 !== 0) {
     return true;
   } else {
     return false;
@@ -235,9 +239,9 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if (letra.length != 1) {
+  if (letra.length !== 1) {
     return "Dato incorrecto";
-  } if (letra === "a"|| letra === "e" || letra === "i" || letra === "o" || letra === "u") {
+  } if (letra === "a" || "A" || letra === "e" || "E" || letra === "i" || "I" || letra === "o" || "O" || letra === "u" || "U") {
     return "Es vocal";  
   } else {
     return "Dato incorrecto";
